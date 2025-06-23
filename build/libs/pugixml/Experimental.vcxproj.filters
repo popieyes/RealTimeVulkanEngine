@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\build\CMakeFiles\925160273096113d5b51082f6ee5660e\Experimental.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\pugixml\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\build\libs\pugixml\CMakeFiles\Experimental" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8DC89586-01B5-3D4B-8FFD-05DB4BE18A4F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

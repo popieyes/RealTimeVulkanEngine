@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\build\CMakeFiles\f890b6f1569bb326e37ca40310502b01\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\CMake\GenerateMappings.cmake" />
+    <None Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\build\libs\glfw\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8DC89586-01B5-3D4B-8FFD-05DB4BE18A4F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B742167C-17CC-3820-BE1B-496785E7E67F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

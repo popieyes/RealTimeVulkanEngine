@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\tinyobjloader\tiny_obj_loader.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\tinyobjloader\tiny_obj_loader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\tinyobjloader\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B742167C-17CC-3820-BE1B-496785E7E67F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EA3ADA7D-7206-3C15-AB56-371BF76F0317}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

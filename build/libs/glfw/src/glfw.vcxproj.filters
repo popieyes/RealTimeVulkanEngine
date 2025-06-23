@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\context.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\monitor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\vulkan.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\window.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\win32_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\win32_joystick.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\win32_monitor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\win32_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\win32_thread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\win32_window.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\wgl_context.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\egl_context.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\osmesa_context.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\mappings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\build\libs\glfw\src\glfw_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\include\GLFW\glfw3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\include\GLFW\glfw3native.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\win32_platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\win32_joystick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\wgl_context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\egl_context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\osmesa_context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\libs\glfw\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B742167C-17CC-3820-BE1B-496785E7E67F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EA3ADA7D-7206-3C15-AB56-371BF76F0317}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
