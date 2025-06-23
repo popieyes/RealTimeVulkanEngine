@@ -26,7 +26,7 @@ events:
       Microsoft (R) Build Engine versión 16.11.2+f32259642 para .NET Framework
       Copyright (C) Microsoft Corporation. Todos los derechos reservados.
       
-      Compilación iniciada a las 23/06/2025 12:38:45.
+      Compilación iniciada a las 23/06/2025 23:12:13.
       Proyecto "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
       PrepareForBuild:
         Creando directorio "Debug\\".
@@ -52,7 +52,7 @@ events:
           0 Advertencia(s)
           0 Errores
       
-      Tiempo transcurrido 00:00:00.68
+      Tiempo transcurrido 00:00:00.61
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -80,7 +80,7 @@ events:
       Microsoft (R) Build Engine versión 16.11.2+f32259642 para .NET Framework
       Copyright (C) Microsoft Corporation. Todos los derechos reservados.
       
-      Compilación iniciada a las 23/06/2025 12:38:46.
+      Compilación iniciada a las 23/06/2025 23:12:13.
       Proyecto "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
       PrepareForBuild:
         Creando directorio "Debug\\".
@@ -106,7 +106,7 @@ events:
           0 Advertencia(s)
           0 Errores
       
-      Tiempo transcurrido 00:00:00.42
+      Tiempo transcurrido 00:00:00.44
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -125,8 +125,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-yjxr45"
-      binary: "C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-yjxr45"
+      source: "C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-ovhife"
+      binary: "C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-ovhife"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -135,33 +135,33 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-yjxr45'
+        Change Dir: 'C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-ovhife'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_12290.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_cd1db.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine versión 16.11.2+f32259642 para .NET Framework
         Copyright (C) Microsoft Corporation. Todos los derechos reservados.
         
-        Compilación iniciada a las 23/06/2025 12:38:47.
-        Proyecto "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yjxr45\\cmTC_12290.vcxproj" en nodo 1 (destinos predeterminados).
+        Compilación iniciada a las 23/06/2025 23:12:14.
+        Proyecto "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ovhife\\cmTC_cd1db.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
-          Creando directorio "cmTC_12290.dir\\Debug\\".
-          Creando directorio "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yjxr45\\Debug\\".
-          Creando directorio "cmTC_12290.dir\\Debug\\cmTC_12290.tlog\\".
+          Creando directorio "cmTC_cd1db.dir\\Debug\\".
+          Creando directorio "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ovhife\\Debug\\".
+          Creando directorio "cmTC_cd1db.dir\\Debug\\cmTC_cd1db.tlog\\".
         InitializeBuildStatus:
-          Se creará "cmTC_12290.dir\\Debug\\cmTC_12290.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+          Se creará "cmTC_cd1db.dir\\Debug\\cmTC_cd1db.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_12290.dir\\Debug\\\\" /Fd"cmTC_12290.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cd1db.dir\\Debug\\\\" /Fd"cmTC_cd1db.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
           Compilador de optimización de C/C++ de Microsoft (R) versión 19.29.30158 para x64
           (C) Microsoft Corporation. Todos los derechos reservados.
           CMakeCCompilerABI.c
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_12290.dir\\Debug\\\\" /Fd"cmTC_12290.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cd1db.dir\\Debug\\\\" /Fd"cmTC_cd1db.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yjxr45\\Debug\\cmTC_12290.exe" /INCREMENTAL /ILK:"cmTC_12290.dir\\Debug\\cmTC_12290.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-yjxr45/Debug/cmTC_12290.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-yjxr45/Debug/cmTC_12290.lib" /MACHINE:X64  /machine:x64 cmTC_12290.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_12290.vcxproj -> C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yjxr45\\Debug\\cmTC_12290.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ovhife\\Debug\\cmTC_cd1db.exe" /INCREMENTAL /ILK:"cmTC_cd1db.dir\\Debug\\cmTC_cd1db.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-ovhife/Debug/cmTC_cd1db.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-ovhife/Debug/cmTC_cd1db.lib" /MACHINE:X64  /machine:x64 cmTC_cd1db.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_cd1db.vcxproj -> C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ovhife\\Debug\\cmTC_cd1db.exe
         FinalizeBuildStatus:
-          Se eliminará el archivo "cmTC_12290.dir\\Debug\\cmTC_12290.tlog\\unsuccessfulbuild".
-          Aplicando tarea Touch a "cmTC_12290.dir\\Debug\\cmTC_12290.tlog\\cmTC_12290.lastbuildstate".
-        Compilación del proyecto terminada "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yjxr45\\cmTC_12290.vcxproj" (destinos predeterminados).
+          Se eliminará el archivo "cmTC_cd1db.dir\\Debug\\cmTC_cd1db.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_cd1db.dir\\Debug\\cmTC_cd1db.tlog\\cmTC_cd1db.lastbuildstate".
+        Compilación del proyecto terminada "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ovhife\\cmTC_cd1db.vcxproj" (destinos predeterminados).
         
         Compilación correcta.
             0 Advertencia(s)
@@ -207,8 +207,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-d1q75a"
-      binary: "C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-d1q75a"
+      source: "C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-byu74y"
+      binary: "C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-byu74y"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -218,39 +218,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-d1q75a'
+        Change Dir: 'C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-byu74y'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_497eb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_4ae23.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine versión 16.11.2+f32259642 para .NET Framework
         Copyright (C) Microsoft Corporation. Todos los derechos reservados.
         
-        Compilación iniciada a las 23/06/2025 12:38:47.
-        Proyecto "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d1q75a\\cmTC_497eb.vcxproj" en nodo 1 (destinos predeterminados).
+        Compilación iniciada a las 23/06/2025 23:12:15.
+        Proyecto "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-byu74y\\cmTC_4ae23.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
-          Creando directorio "cmTC_497eb.dir\\Debug\\".
-          Creando directorio "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d1q75a\\Debug\\".
-          Creando directorio "cmTC_497eb.dir\\Debug\\cmTC_497eb.tlog\\".
+          Creando directorio "cmTC_4ae23.dir\\Debug\\".
+          Creando directorio "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-byu74y\\Debug\\".
+          Creando directorio "cmTC_4ae23.dir\\Debug\\cmTC_4ae23.tlog\\".
         InitializeBuildStatus:
-          Se creará "cmTC_497eb.dir\\Debug\\cmTC_497eb.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+          Se creará "cmTC_4ae23.dir\\Debug\\cmTC_4ae23.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_497eb.dir\\Debug\\\\" /Fd"cmTC_497eb.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4ae23.dir\\Debug\\\\" /Fd"cmTC_4ae23.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
           Compilador de optimización de C/C++ de Microsoft (R) versión 19.29.30158 para x64
           (C) Microsoft Corporation. Todos los derechos reservados.
           CMakeCXXCompilerABI.cpp
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_497eb.dir\\Debug\\\\" /Fd"cmTC_497eb.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4ae23.dir\\Debug\\\\" /Fd"cmTC_4ae23.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d1q75a\\Debug\\cmTC_497eb.exe" /INCREMENTAL /ILK:"cmTC_497eb.dir\\Debug\\cmTC_497eb.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-d1q75a/Debug/cmTC_497eb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-d1q75a/Debug/cmTC_497eb.lib" /MACHINE:X64  /machine:x64 cmTC_497eb.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_497eb.vcxproj -> C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d1q75a\\Debug\\cmTC_497eb.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-byu74y\\Debug\\cmTC_4ae23.exe" /INCREMENTAL /ILK:"cmTC_4ae23.dir\\Debug\\cmTC_4ae23.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-byu74y/Debug/cmTC_4ae23.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-byu74y/Debug/cmTC_4ae23.lib" /MACHINE:X64  /machine:x64 cmTC_4ae23.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_4ae23.vcxproj -> C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-byu74y\\Debug\\cmTC_4ae23.exe
         FinalizeBuildStatus:
-          Se eliminará el archivo "cmTC_497eb.dir\\Debug\\cmTC_497eb.tlog\\unsuccessfulbuild".
-          Aplicando tarea Touch a "cmTC_497eb.dir\\Debug\\cmTC_497eb.tlog\\cmTC_497eb.lastbuildstate".
-        Compilación del proyecto terminada "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d1q75a\\cmTC_497eb.vcxproj" (destinos predeterminados).
+          Se eliminará el archivo "cmTC_4ae23.dir\\Debug\\cmTC_4ae23.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_4ae23.dir\\Debug\\cmTC_4ae23.tlog\\cmTC_4ae23.lastbuildstate".
+        Compilación del proyecto terminada "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-byu74y\\cmTC_4ae23.vcxproj" (destinos predeterminados).
         
         Compilación correcta.
             0 Advertencia(s)
             0 Errores
         
-        Tiempo transcurrido 00:00:00.42
+        Tiempo transcurrido 00:00:00.43
         
       exitCode: 0
   -
@@ -292,8 +292,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-bvbbn8"
-      binary: "C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-bvbbn8"
+      source: "C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-vdrlmk"
+      binary: "C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-vdrlmk"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -303,34 +303,34 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-bvbbn8'
+        Change Dir: 'C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-vdrlmk'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_b22aa.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_f0e29.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine versión 16.11.2+f32259642 para .NET Framework
         Copyright (C) Microsoft Corporation. Todos los derechos reservados.
         
-        Compilación iniciada a las 23/06/2025 12:38:48.
-        Proyecto "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bvbbn8\\cmTC_b22aa.vcxproj" en nodo 1 (destinos predeterminados).
+        Compilación iniciada a las 23/06/2025 23:12:15.
+        Proyecto "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vdrlmk\\cmTC_f0e29.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
-          Creando directorio "cmTC_b22aa.dir\\Debug\\".
-          Creando directorio "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bvbbn8\\Debug\\".
-          Creando directorio "cmTC_b22aa.dir\\Debug\\cmTC_b22aa.tlog\\".
+          Creando directorio "cmTC_f0e29.dir\\Debug\\".
+          Creando directorio "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vdrlmk\\Debug\\".
+          Creando directorio "cmTC_f0e29.dir\\Debug\\cmTC_f0e29.tlog\\".
         InitializeBuildStatus:
-          Se creará "cmTC_b22aa.dir\\Debug\\cmTC_b22aa.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+          Se creará "cmTC_f0e29.dir\\Debug\\cmTC_f0e29.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b22aa.dir\\Debug\\\\" /Fd"cmTC_b22aa.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bvbbn8\\src.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f0e29.dir\\Debug\\\\" /Fd"cmTC_f0e29.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vdrlmk\\src.c"
           Compilador de optimización de C/C++ de Microsoft (R) versión 19.29.30158 para x64
           (C) Microsoft Corporation. Todos los derechos reservados.
           src.c
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b22aa.dir\\Debug\\\\" /Fd"cmTC_b22aa.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bvbbn8\\src.c"
-        C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bvbbn8\\src.c(1,10): fatal error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bvbbn8\\cmTC_b22aa.vcxproj]
-        Compilación del proyecto terminada "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bvbbn8\\cmTC_b22aa.vcxproj" (destinos predeterminados) -- ERROR.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f0e29.dir\\Debug\\\\" /Fd"cmTC_f0e29.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vdrlmk\\src.c"
+        C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vdrlmk\\src.c(1,10): fatal error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vdrlmk\\cmTC_f0e29.vcxproj]
+        Compilación del proyecto terminada "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vdrlmk\\cmTC_f0e29.vcxproj" (destinos predeterminados) -- ERROR.
         
         ERROR al compilar.
         
-        "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bvbbn8\\cmTC_b22aa.vcxproj" (destino predeterminado) (1) ->
+        "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vdrlmk\\cmTC_f0e29.vcxproj" (destino predeterminado) (1) ->
         (ClCompile destino) -> 
-          C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bvbbn8\\src.c(1,10): fatal error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bvbbn8\\cmTC_b22aa.vcxproj]
+          C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vdrlmk\\src.c(1,10): fatal error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vdrlmk\\cmTC_f0e29.vcxproj]
         
             0 Advertencia(s)
             1 Errores
@@ -348,8 +348,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-e9efin"
-      binary: "C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-e9efin"
+      source: "C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-uaat14"
+      binary: "C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-uaat14"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -359,41 +359,41 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-e9efin'
+        Change Dir: 'C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-uaat14'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_04a21.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_e192e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine versión 16.11.2+f32259642 para .NET Framework
         Copyright (C) Microsoft Corporation. Todos los derechos reservados.
         
-        Compilación iniciada a las 23/06/2025 12:38:48.
-        Proyecto "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e9efin\\cmTC_04a21.vcxproj" en nodo 1 (destinos predeterminados).
+        Compilación iniciada a las 23/06/2025 23:12:16.
+        Proyecto "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uaat14\\cmTC_e192e.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
-          Creando directorio "cmTC_04a21.dir\\Debug\\".
-          Creando directorio "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e9efin\\Debug\\".
-          Creando directorio "cmTC_04a21.dir\\Debug\\cmTC_04a21.tlog\\".
+          Creando directorio "cmTC_e192e.dir\\Debug\\".
+          Creando directorio "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uaat14\\Debug\\".
+          Creando directorio "cmTC_e192e.dir\\Debug\\cmTC_e192e.tlog\\".
         InitializeBuildStatus:
-          Se creará "cmTC_04a21.dir\\Debug\\cmTC_04a21.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+          Se creará "cmTC_e192e.dir\\Debug\\cmTC_e192e.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_04a21.dir\\Debug\\\\" /Fd"cmTC_04a21.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e9efin\\CheckFunctionExists.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e192e.dir\\Debug\\\\" /Fd"cmTC_e192e.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uaat14\\CheckFunctionExists.c"
           Compilador de optimización de C/C++ de Microsoft (R) versión 19.29.30158 para x64
           (C) Microsoft Corporation. Todos los derechos reservados.
           CheckFunctionExists.c
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_04a21.dir\\Debug\\\\" /Fd"cmTC_04a21.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e9efin\\CheckFunctionExists.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e192e.dir\\Debug\\\\" /Fd"cmTC_e192e.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uaat14\\CheckFunctionExists.c"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e9efin\\Debug\\cmTC_04a21.exe" /INCREMENTAL /ILK:"cmTC_04a21.dir\\Debug\\cmTC_04a21.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-e9efin/Debug/cmTC_04a21.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-e9efin/Debug/cmTC_04a21.lib" /MACHINE:X64  /machine:x64 cmTC_04a21.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: no se puede abrir el archivo 'pthreads.lib' [C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e9efin\\cmTC_04a21.vcxproj]
-        Compilación del proyecto terminada "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e9efin\\cmTC_04a21.vcxproj" (destinos predeterminados) -- ERROR.
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uaat14\\Debug\\cmTC_e192e.exe" /INCREMENTAL /ILK:"cmTC_e192e.dir\\Debug\\cmTC_e192e.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-uaat14/Debug/cmTC_e192e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-uaat14/Debug/cmTC_e192e.lib" /MACHINE:X64  /machine:x64 cmTC_e192e.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: no se puede abrir el archivo 'pthreads.lib' [C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uaat14\\cmTC_e192e.vcxproj]
+        Compilación del proyecto terminada "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uaat14\\cmTC_e192e.vcxproj" (destinos predeterminados) -- ERROR.
         
         ERROR al compilar.
         
-        "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e9efin\\cmTC_04a21.vcxproj" (destino predeterminado) (1) ->
+        "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uaat14\\cmTC_e192e.vcxproj" (destino predeterminado) (1) ->
         (Link destino) -> 
-          LINK : fatal error LNK1104: no se puede abrir el archivo 'pthreads.lib' [C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e9efin\\cmTC_04a21.vcxproj]
+          LINK : fatal error LNK1104: no se puede abrir el archivo 'pthreads.lib' [C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uaat14\\cmTC_e192e.vcxproj]
         
             0 Advertencia(s)
             1 Errores
         
-        Tiempo transcurrido 00:00:00.34
+        Tiempo transcurrido 00:00:00.37
         
       exitCode: 1
   -
@@ -406,8 +406,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-l6kpvk"
-      binary: "C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-l6kpvk"
+      source: "C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-ygrfuq"
+      binary: "C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-ygrfuq"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -417,41 +417,41 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-l6kpvk'
+        Change Dir: 'C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-ygrfuq'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_3bc69.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_d0b80.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine versión 16.11.2+f32259642 para .NET Framework
         Copyright (C) Microsoft Corporation. Todos los derechos reservados.
         
-        Compilación iniciada a las 23/06/2025 12:38:49.
-        Proyecto "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l6kpvk\\cmTC_3bc69.vcxproj" en nodo 1 (destinos predeterminados).
+        Compilación iniciada a las 23/06/2025 23:12:17.
+        Proyecto "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ygrfuq\\cmTC_d0b80.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
-          Creando directorio "cmTC_3bc69.dir\\Debug\\".
-          Creando directorio "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l6kpvk\\Debug\\".
-          Creando directorio "cmTC_3bc69.dir\\Debug\\cmTC_3bc69.tlog\\".
+          Creando directorio "cmTC_d0b80.dir\\Debug\\".
+          Creando directorio "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ygrfuq\\Debug\\".
+          Creando directorio "cmTC_d0b80.dir\\Debug\\cmTC_d0b80.tlog\\".
         InitializeBuildStatus:
-          Se creará "cmTC_3bc69.dir\\Debug\\cmTC_3bc69.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+          Se creará "cmTC_d0b80.dir\\Debug\\cmTC_d0b80.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3bc69.dir\\Debug\\\\" /Fd"cmTC_3bc69.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l6kpvk\\CheckFunctionExists.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d0b80.dir\\Debug\\\\" /Fd"cmTC_d0b80.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ygrfuq\\CheckFunctionExists.c"
           Compilador de optimización de C/C++ de Microsoft (R) versión 19.29.30158 para x64
           (C) Microsoft Corporation. Todos los derechos reservados.
           CheckFunctionExists.c
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3bc69.dir\\Debug\\\\" /Fd"cmTC_3bc69.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l6kpvk\\CheckFunctionExists.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d0b80.dir\\Debug\\\\" /Fd"cmTC_d0b80.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ygrfuq\\CheckFunctionExists.c"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l6kpvk\\Debug\\cmTC_3bc69.exe" /INCREMENTAL /ILK:"cmTC_3bc69.dir\\Debug\\cmTC_3bc69.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-l6kpvk/Debug/cmTC_3bc69.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-l6kpvk/Debug/cmTC_3bc69.lib" /MACHINE:X64  /machine:x64 cmTC_3bc69.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: no se puede abrir el archivo 'pthread.lib' [C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l6kpvk\\cmTC_3bc69.vcxproj]
-        Compilación del proyecto terminada "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l6kpvk\\cmTC_3bc69.vcxproj" (destinos predeterminados) -- ERROR.
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ygrfuq\\Debug\\cmTC_d0b80.exe" /INCREMENTAL /ILK:"cmTC_d0b80.dir\\Debug\\cmTC_d0b80.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-ygrfuq/Debug/cmTC_d0b80.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/menec/Documents/URJC/Rendering Avanzado II/Assignment/build/CMakeFiles/CMakeScratch/TryCompile-ygrfuq/Debug/cmTC_d0b80.lib" /MACHINE:X64  /machine:x64 cmTC_d0b80.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: no se puede abrir el archivo 'pthread.lib' [C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ygrfuq\\cmTC_d0b80.vcxproj]
+        Compilación del proyecto terminada "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ygrfuq\\cmTC_d0b80.vcxproj" (destinos predeterminados) -- ERROR.
         
         ERROR al compilar.
         
-        "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l6kpvk\\cmTC_3bc69.vcxproj" (destino predeterminado) (1) ->
+        "C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ygrfuq\\cmTC_d0b80.vcxproj" (destino predeterminado) (1) ->
         (Link destino) -> 
-          LINK : fatal error LNK1104: no se puede abrir el archivo 'pthread.lib' [C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l6kpvk\\cmTC_3bc69.vcxproj]
+          LINK : fatal error LNK1104: no se puede abrir el archivo 'pthread.lib' [C:\\Users\\menec\\Documents\\URJC\\Rendering Avanzado II\\Assignment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ygrfuq\\cmTC_d0b80.vcxproj]
         
             0 Advertencia(s)
             1 Errores
         
-        Tiempo transcurrido 00:00:00.34
+        Tiempo transcurrido 00:00:00.35
         
       exitCode: 1
 ...

@@ -1,76 +1,72 @@
 #pragma once
 
+
 #include "vulkan/renderPassVK.h"
 
 namespace MiniEngine
 {
     struct Runtime;
-    class Entity;
-    typedef std::shared_ptr<Entity> EntityPtr;
+    class MeshVK;
+    typedef std::shared_ptr<MeshVK> MeshVKPtr;
 
-    class SSAOPassVK final : public RenderPassVK
+    class SsaoPassVK final : public RenderPassVK
     {
     public:
-        SSAOPassVK(
+        SsaoPassVK(
             const Runtime& i_runtime,
-            const ImageBlock& i_depth_buffer,
-            const ImageBlock& i_normals_attachment,
-            const ImageBlock& i_position_attachment,
-            const ImageBlock& i_ssao_attachment);
-        virtual ~SSAOPassVK();
+            const ImageBlock& i_in_position_depth_attachment,
+            const ImageBlock& i_in_normal_attachment,
+            const ImageBlock& i_out_ssao_attachment
+        );
+
+        virtual ~SsaoPassVK();
 
         bool            initialize() override;
         void            shutdown() override;
         VkCommandBuffer draw(const Frame& i_frame) override;
 
-        void addEntityToDraw(const EntityPtr i_entity) override;
-
     private:
-        SSAOPassVK(const SSAOPassVK&) = delete;
-        SSAOPassVK& operator=(const SSAOPassVK&) = delete;
+        SsaoPassVK(const SsaoPassVK&) = delete;
+        SsaoPassVK& operator=(const SsaoPassVK&) = delete;
 
         void createFbo();
         void createRenderPass();
         void createPipelines();
         void createDescriptorLayout();
         void createDescriptors();
-
-        void generateNoiseTexture();
-        void generateKernelSamples();
+        void initAuxStructures();
 
         struct DescriptorsSets
         {
-            VkDescriptorSet m_per_frame_descriptor;
-            VkDescriptorSet m_ssao_inputs_descriptor;
+            VkDescriptorSet m_textures_descriptor;
+        };        VkRenderPass                                     m_render_pass;
+        std::array<VkCommandBuffer, kMAX_NUMBER_OF_FRAMES> m_command_buffer;
+        std::array<VkFramebuffer, kMAX_NUMBER_OF_FRAMES>   m_fbos;
+
+        // prepare the different render supported depending on the material
+        VkPipeline                                                         m_composition_pipeline;
+        VkPipelineLayout                                                   m_pipeline_layouts;
+        VkDescriptorSetLayout                                              m_descriptor_set_layout; //1 sets, per frame
+        VkDescriptorPool                                                   m_descriptor_pool;
+        std::array<DescriptorsSets, kMAX_NUMBER_OF_FRAMES> m_descriptor_sets;
+        std::array<VkPipelineShaderStageCreateInfo, 2                    > m_shader_stages;
+
+        MeshVKPtr m_plane;
+
+        // 
+        struct Buffer {
+            VkBuffer buffer;
+            VkDeviceMemory memory;
         };
 
-        struct MaterialPipeline
-        {
-            // prepare the different render supported depending on the material
-            VkPipeline                                                         m_pipeline;
-            VkPipelineLayout                                                   m_pipeline_layouts;
-            std::array<VkDescriptorSetLayout, 2                    > m_descriptor_set_layout; //2 sets, per frame and per object
-            std::array<DescriptorsSets, 3                    > m_descriptor_sets;
-            std::array<VkPipelineShaderStageCreateInfo, 2                    > m_shader_stages;
-        };
+        std::vector<Vector4f> m_ssao_kernel;    // Muestras del kernel en CPU
+        Buffer m_kernel_buffer;                 // Buffer para almacenar las muestras del kernel en GPU
+        const size_t SSAO_KERNEL_SIZE = 64;
 
-        std::array<MaterialPipeline, 2> m_pipelines; //one by material
+        ImageBlock m_in_position_depth_attachment;
+        ImageBlock m_in_normal_attachment;
+        ImageBlock m_out_ssao_attachment;
+        ImageBlock m_noise_texture;
 
-        VkRenderPass                   m_render_pass;
-        std::array<VkCommandBuffer, 3> m_command_buffer;
-        std::array<VkFramebuffer, 3> m_fbos;
-        VkDescriptorPool               m_descriptor_pool;
-
-        std::unordered_map<uint32_t, std::vector<EntityPtr>> m_entities_to_draw;
-
-        const ImageBlock m_depth_buffer;
-        const ImageBlock m_normals_attachment;
-        const ImageBlock m_position_attachment;
-        const ImageBlock m_ssao_attachment;
-
-        std::vector<Vector4f> m_kernelSamples;
-        ImageBlock m_noise;
-        VkBuffer m_kernelBuffer;
-        VkDeviceMemory m_kernelMemory;
-    };
+    }; 
 };

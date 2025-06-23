@@ -36,9 +36,7 @@ namespace MiniEngine
         void setImageLayout( VkCommandBuffer i_cmd_buffer, VkImage i_image, VkImageLayout i_old_image_layout, VkImageLayout i_new_image_layout, VkImageSubresourceRange i_subresource_range, VkPipelineStageFlags isrc_stage_mask = VK_PIPELINE_STAGE_ALL_COMMANDS_BIT, VkPipelineStageFlags i_dst_stage_mask = VK_PIPELINE_STAGE_ALL_COMMANDS_BIT);
    
         void createImage( const DeviceVK& i_device, VkFormat i_format, VkImageUsageFlagBits i_usage_bits, uint32_t i_width, uint32_t i_height, ImageBlock& o_image_block );
-        
-        void createImage(const DeviceVK& i_device, VkFormat i_format, VkImageUsageFlagBits i_usage_bits, uint32_t i_width, uint32_t i_height, uint32_t i_depth, uint32_t i_mip_levels, ImageBlockType i_image_type, ImageBlock& o_image_block);
-       
+    
         void freeImageBlock( const DeviceVK& i_device, ImageBlock& io_free_image_block );
 
         void TextureFromBuffer( const DeviceVK& device,void* i_buffer, VkDeviceSize i_buffer_size, VkFormat i_format, uint32_t i_tex_width, uint32_t i_tex_height, ImageBlock& o_new_image, VkFilter i_filter = VK_FILTER_LINEAR, VkImageUsageFlags i_image_usage_flags = VK_IMAGE_USAGE_SAMPLED_BIT, VkImageLayout i_image_layout= VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL );
