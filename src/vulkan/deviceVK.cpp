@@ -102,7 +102,7 @@ void DeviceVK::createPhysicalDevice()
 
     // Select physical device to be used for the Vulkan example
     // Defaults to the first device unless specified by command line
-    uint32_t selected_device = 0;
+    uint32_t selected_device = 1;
 
     m_physical_device = physical_devices[ selected_device ];
 

@@ -122,7 +122,7 @@ vec3 evalMicrofacets()
     float roughness = texture( i_material, f_uvs ).y;
     float metallic = texture( i_material, f_uvs ).z;
 
-    float f0 = mix(0.04f, max(albedor.r, max(albedo.g, albedo.b)), metallic);
+    float f0 = mix(0.04f, max(albedo.r, max(albedo.g, albedo.b)), metallic);
     vec3 f0_vec = mix(vec3(0.04f), albedo.rgb, metallic);
 
     vec3 l = vec3( 0.0 );
@@ -139,7 +139,7 @@ vec3 evalMicrofacets()
         {
             case 0: //directional
             {
-                l = normalize( light.m_light_pos.xyz );
+                l = normalize( -light.m_light_pos.xyz );
                 diffuse = max(dot(n, l), 0.0) * light.m_radiance.rgb * albedo.rgb;
                 break;
             }
