@@ -340,7 +340,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\vulkan\blurPassVK.h" />
     <ClInclude Include="..\include\vulkan\depthPassVK.h" />
+    <ClInclude Include="..\include\vulkan\shadowPassVK.h" />
+    <ClInclude Include="..\include\vulkan\SSAOPassVK.h" />
     <ClInclude Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\include\defines.h" />
     <ClInclude Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\include\common.h" />
     <ClInclude Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\include\scene.h" />
@@ -364,7 +367,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\include\vulkan\renderPassVK.h" />
     <ClInclude Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\include\vulkan\deferredPassVK.h" />
     <ClInclude Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\include\vulkan\compositionPassVK.h" />
+    <ClCompile Include="..\src\vulkan\blurPassVK.cpp" />
     <ClCompile Include="..\src\vulkan\depthPassVK.cpp" />
+    <ClCompile Include="..\src\vulkan\shadowPassVK.cpp" />
+    <ClCompile Include="..\src\vulkan\SSAOPassVK.cpp" />
     <ClCompile Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\main.cpp" />
     <ClCompile Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\src\entity.cpp" />
     <ClCompile Include="C:\Users\menec\Documents\URJC\Rendering Avanzado II\Assignment\src\engine.cpp" />

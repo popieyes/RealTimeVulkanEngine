@@ -284,8 +284,16 @@ void Engine::createRenderPasses ()
 
     m_render_passes.push_back(shadow_pass);
 
-    auto composition_pass = std::make_shared<CompositionPassVK>( m_runtime, m_render_target_attachments.m_color_attachment, m_render_target_attachments.m_position_depth_attachment, m_render_target_attachments.m_normal_attachment, m_render_target_attachments.m_material_attachment, m_runtime.m_renderer->getWindow().getSwapChainImages() );
+    auto composition_pass = std::make_shared<CompositionPassVK>
+        ( m_runtime, m_render_target_attachments.m_color_attachment, 
+            m_render_target_attachments.m_position_depth_attachment, 
+            m_render_target_attachments.m_normal_attachment, 
+            m_render_target_attachments.m_material_attachment,
+            m_render_target_attachments.m_shadow_attachment,
+            m_runtime.m_renderer->getWindow().getSwapChainImages() );
+
     composition_pass->initialize();
+
 
     m_render_passes.push_back( composition_pass );
 
@@ -346,7 +354,6 @@ void Engine::updateGlobalBuffers()
         perframe_data.m_lights[ perframe_data.m_number_of_lights ].m_attenuattion = Vector4f( light->m_data.m_attenuation.x, light->m_data.m_attenuation.y, light->m_data.m_attenuation.z, 0.0f                 );*/
         Vector3f lightPos;
 
-        Vector3f lightPos; 
             switch (light->m_data.m_type)
             {
             case Light::LightType::Directional:

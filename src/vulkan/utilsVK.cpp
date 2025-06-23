@@ -352,7 +352,8 @@ void UtilsVK::setImageLayout(
 }
 
 
-void UtilsVK::createImage( const DeviceVK& i_device, VkFormat i_format, VkImageUsageFlagBits i_usage_bits, uint32_t i_width, uint32_t i_height, ImageBlock& o_image_block )
+void UtilsVK::createImage( const DeviceVK& i_device, VkFormat i_format, VkImageUsageFlagBits i_usage_bits, 
+	uint32_t i_width, uint32_t i_height, ImageBlock& o_image_block )
  {
      VkImageAspectFlags aspect_mask = 0;
      VkImageLayout      image_layout;
@@ -425,6 +426,96 @@ void UtilsVK::createImage( const DeviceVK& i_device, VkFormat i_format, VkImageU
          throw MiniEngineException( "Issue creating an image" );
      }
  }
+
+void UtilsVK::createImage(const DeviceVK& i_device, VkFormat i_format, VkImageUsageFlagBits i_usage_bits,
+	uint32_t i_width, uint32_t i_height, uint32_t i_depth, uint32_t i_mip_levels,
+	ImageBlockType i_image_type, ImageBlock& o_image_block)
+{
+    VkImageAspectFlags aspect_mask = 0;
+    VkImageLayout image_layout;
+
+    o_image_block.m_format = i_format;
+    o_image_block.m_type = i_image_type;
+
+    if (i_usage_bits & VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT)
+    {
+        aspect_mask = VK_IMAGE_ASPECT_COLOR_BIT;
+        image_layout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL;
+    }
+    if (i_usage_bits & VK_IMAGE_USAGE_DEPTH_STENCIL_ATTACHMENT_BIT)
+    {
+        aspect_mask = VK_IMAGE_ASPECT_DEPTH_BIT;
+        image_layout = VK_IMAGE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL;
+    }
+
+    assert(aspect_mask > 0);
+
+    VkImageCreateInfo image{};
+    image.sType = VK_STRUCTURE_TYPE_IMAGE_CREATE_INFO;
+    image.imageType = i_image_type != IMAGE_BLOCK_3D ? VK_IMAGE_TYPE_2D : VK_IMAGE_TYPE_3D;
+    image.format = i_format;
+    image.extent.width = i_width;
+    image.extent.height = i_height;
+    image.extent.depth = i_image_type != IMAGE_BLOCK_3D ? 1 : i_depth;
+    image.mipLevels = i_mip_levels;
+    image.arrayLayers = i_image_type != IMAGE_BLOCK_2D_ARRAY ? 1 : i_depth;
+    image.samples = VK_SAMPLE_COUNT_1_BIT;
+    image.tiling = VK_IMAGE_TILING_OPTIMAL;
+    image.usage = i_usage_bits | VK_IMAGE_USAGE_SAMPLED_BIT;
+
+    VkMemoryAllocateInfo mem_alloc{};
+    mem_alloc.sType = VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_INFO;
+    VkMemoryRequirements mem_reqs;
+
+    if (VK_SUCCESS != vkCreateImage(i_device.getLogicalDevice(), &image, nullptr, &o_image_block.m_image))
+    {
+        throw MiniEngineException("Issue creating an image");
+    }
+
+    vkGetImageMemoryRequirements(i_device.getLogicalDevice(), o_image_block.m_image, &mem_reqs);
+    mem_alloc.allocationSize = mem_reqs.size;
+    mem_alloc.memoryTypeIndex =
+        i_device.getMemoryTypeIndex(mem_reqs.memoryTypeBits, VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT);
+
+    if (VK_SUCCESS != vkAllocateMemory(i_device.getLogicalDevice(), &mem_alloc, nullptr, &o_image_block.m_memory))
+    {
+        throw MiniEngineException("Issue creating an image");
+    }
+
+    if (VK_SUCCESS != vkBindImageMemory(i_device.getLogicalDevice(), o_image_block.m_image, o_image_block.m_memory, 0))
+    {
+        throw MiniEngineException("Issue creating an image");
+    }
+
+    VkImageViewCreateInfo image_view{};
+    image_view.sType = VK_STRUCTURE_TYPE_IMAGE_VIEW_CREATE_INFO;
+    switch (i_image_type)
+    {
+    case IMAGE_BLOCK_2D:
+        image_view.viewType = VK_IMAGE_VIEW_TYPE_2D;
+        break;
+    case IMAGE_BLOCK_2D_ARRAY:
+        image_view.viewType = VK_IMAGE_VIEW_TYPE_2D_ARRAY;
+        break;
+    case IMAGE_BLOCK_3D:
+        image_view.viewType = VK_IMAGE_VIEW_TYPE_3D;
+        break;
+    }
+    image_view.format = o_image_block.m_format;
+    image_view.subresourceRange = {};
+    image_view.subresourceRange.aspectMask = aspect_mask;
+    image_view.subresourceRange.baseMipLevel = 0;
+    image_view.subresourceRange.levelCount = i_mip_levels;
+    image_view.subresourceRange.baseArrayLayer = 0;
+    image_view.subresourceRange.layerCount = i_image_type != IMAGE_BLOCK_2D_ARRAY ? 1 : i_depth;
+    image_view.image = o_image_block.m_image;
+
+    if (VK_SUCCESS != vkCreateImageView(i_device.getLogicalDevice(), &image_view, nullptr, &o_image_block.m_image_view))
+    {
+        throw MiniEngineException("Issue creating an image"); 
+    }
+}
+
 
 
  void UtilsVK::freeImageBlock( const DeviceVK& i_device, ImageBlock& io_free_image_block )
