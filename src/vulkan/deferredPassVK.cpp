@@ -298,7 +298,7 @@ void DeferredPassVK::createRenderPass()
     // Depth  attachment
     attachments[ 4 ].format         = m_depth_buffer.m_format;
     attachments[ 4 ].samples        = VK_SAMPLE_COUNT_1_BIT;
-    attachments[ 4 ].loadOp         = VK_ATTACHMENT_LOAD_OP_DONT_CARE;
+    attachments[ 4 ].loadOp         = VK_ATTACHMENT_LOAD_OP_LOAD;
     attachments[ 4 ].storeOp        = VK_ATTACHMENT_STORE_OP_STORE;
     attachments[ 4 ].stencilLoadOp  = VK_ATTACHMENT_LOAD_OP_DONT_CARE;
     attachments[ 4 ].stencilStoreOp = VK_ATTACHMENT_STORE_OP_STORE;
