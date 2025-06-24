@@ -138,7 +138,7 @@ void SsaoPassVK::initAuxStructures() {
         ssao_noise[i] = glm::vec2(randomFloats(generator) * 2.0f - 1.0f, randomFloats(generator) * 2.0f - 1.0f);
 
     // Generamos imagen y la subimos a la GPU
-    UtilsVK::TextureFromBuffer(*m_runtime.m_renderer->getDevice(), ssao_noise.data(), sizeof(ssao_noise), VK_FORMAT_R32G32_SFLOAT, kSSAO_NOISE_DIM, kSSAO_NOISE_DIM, m_noise_texture);
+    UtilsVK::TextureFromBuffer(*m_runtime.m_renderer->getDevice(), ssao_noise.data(), sizeof(ssao_noise), VK_FORMAT_R32G32B32A32_SFLOAT, kSSAO_NOISE_DIM, kSSAO_NOISE_DIM, m_noise_texture);
 }
 
 void SsaoPassVK::shutdown()

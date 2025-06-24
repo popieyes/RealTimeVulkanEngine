@@ -43,7 +43,7 @@ vec3 evalDiffuse()
     vec3  n            = normalize( texture( i_normal, f_uvs ).rgb * 2.0 - 1.0 );    
     vec3  frag_pos     = texture( i_position_and_depth, f_uvs ).xyz;
     vec3  shading = vec3( 0.0 );
-
+    float occlusion = texture(i_ssao, f_uvs).r;
 
     for( uint id_light = 0; id_light < per_frame_data.m_number_of_lights; id_light++ )
     {
@@ -71,7 +71,7 @@ vec3 evalDiffuse()
             }
             case 2: //ambient
             {
-                shading += light.m_radiance.rgb * albedo.rgb;
+                shading += light.m_radiance.rgb * albedo.rgb * occlusion;
                 break;
             }
         }
@@ -126,7 +126,7 @@ vec3 evalMicrofacets()
     vec3 f0_vec = mix(vec3(0.04f), albedo.rgb, metallic);
 
     vec3 l = vec3( 0.0 );
-
+    float occlusion = texture(i_ssao, f_uvs).r;
     for( uint id_light = 0; id_light < per_frame_data.m_number_of_lights; id_light++ )
     {
         LightData light = per_frame_data.m_lights[ id_light ];
@@ -156,7 +156,7 @@ vec3 evalMicrofacets()
             }
             case 2: //ambient
             {
-                shading += light.m_radiance.rgb * albedo.rgb;
+                shading += light.m_radiance.rgb * albedo.rgb * occlusion;
                 break;
             }
         }
@@ -180,7 +180,7 @@ void main()
 {
     float gamma = 2.2f;
     float exposure = 1.0f;
-    float ssao_strength = 1.5f; // Parámetro ajustable
+    float ssao_strength = 0.6f; // Parámetro ajustable
     vec3 mapped;
 
     int id_material = int( texture( i_material, f_uvs ).x );
@@ -191,13 +191,13 @@ void main()
         case 0: //diffuse
         {
             mapped = vec3( 1.0f ) - exp(-evalDiffuse() * exposure);
-            mapped *= (1.0 - occlusion * ssao_strength);
+            //mapped *= (1.0 - occlusion * ssao_strength);
             break;
         }
         case 1: //microfacets
         {
             mapped = vec3(1.0f) - exp(-evalMicrofacets() * exposure);
-            mapped *= (1.0 - occlusion * ssao_strength * 0.5);
+            //mapped *= (1.0 - occlusion * ssao_strength * 0.5);
             break;
         }
         default:
@@ -208,5 +208,7 @@ void main()
 
     }
 
-    out_color = vec4( pow( mapped, vec3( 1.0f / gamma ) ), 1.0 );
+    // Debugging output
+    //out_color = vec4( occlusion, occlusion,occlusion, 1.0 );
+    out_color = vec4( pow( mapped, vec3( 1.0f / gamma ) ), 1.0 ) * occlusion;
 }

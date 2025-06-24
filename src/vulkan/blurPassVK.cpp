@@ -46,7 +46,9 @@ bool blurPassVK::initialize()
     {
         VkShaderModule vert_module = m_runtime.m_shader_registry->loadShader("./shaders/ssao_v.spv", VK_SHADER_STAGE_VERTEX_BIT);
         VkShaderModule frag_module = m_runtime.m_shader_registry->loadShader("./shaders/blur_f.spv", VK_SHADER_STAGE_FRAGMENT_BIT);
-
+        if (vert_module == VK_NULL_HANDLE || frag_module == VK_NULL_HANDLE) {
+            throw MiniEngineException("Failed to load shaders");
+        }
         {
 
             VkPipelineShaderStageCreateInfo vert_shader{};
@@ -128,12 +130,13 @@ void blurPassVK::shutdown()
 
     vkFreeCommandBuffers(renderer.getDevice()->getLogicalDevice(), renderer.getDevice()->getCommandPool(), m_command_buffer.size(), m_command_buffer.data());
 
+
     vkDestroyDescriptorPool(renderer.getDevice()->getLogicalDevice(), m_descriptor_pool, nullptr);
 
     for (auto& pipeline : m_pipelines)
     {
         vkDestroyDescriptorSetLayout(renderer.getDevice()->getLogicalDevice(), pipeline.m_descriptor_set_layout[0], nullptr);
-        vkDestroyDescriptorSetLayout(renderer.getDevice()->getLogicalDevice(), pipeline.m_descriptor_set_layout[1], nullptr);
+        //vkDestroyDescriptorSetLayout(renderer.getDevice()->getLogicalDevice(), pipeline.m_descriptor_set_layout[1], nullptr);
         vkDestroyPipeline(renderer.getDevice()->getLogicalDevice(), pipeline.m_pipeline, nullptr);
         vkDestroyPipelineLayout(renderer.getDevice()->getLogicalDevice(), pipeline.m_pipeline_layouts, nullptr);
     }
@@ -200,7 +203,16 @@ VkCommandBuffer blurPassVK::draw(const Frame& i_frame)
         UtilsVK::beginRegion(current_cmd, mat_id == 0 ? "Diffuse GBuffer Pass" : mat_id == 1 ? "Dielectric GBuffer Pass" : "Microfacets GBuffer Pass", Vector4f(0.0f, 0.5f, 0.5f, 1.0f));
 
         vkCmdBindPipeline(current_cmd, VK_PIPELINE_BIND_POINT_GRAPHICS, m_pipelines[mat_id].m_pipeline);
-        vkCmdBindDescriptorSets(current_cmd, VK_PIPELINE_BIND_POINT_GRAPHICS, m_pipelines[mat_id].m_pipeline_layouts, 0, 2, &m_pipelines[mat_id].m_descriptor_sets[renderer.getWindow().getCurrentImageId()].m_per_frame_descriptor, 0, nullptr);
+        // Just a set of descriptors
+        vkCmdBindDescriptorSets(
+            current_cmd, 
+            VK_PIPELINE_BIND_POINT_GRAPHICS, 
+            m_pipelines[mat_id].m_pipeline_layouts, 
+            0, 
+            1, 
+            &m_pipelines[mat_id].m_descriptor_sets[renderer.getWindow().getCurrentImageId()].m_per_frame_descriptor, 
+            0, 
+            nullptr);
 
         for (auto entity : m_entities_to_draw[mat_id])
         {
@@ -374,6 +386,27 @@ void blurPassVK::createPipelines()
     // Crear pipeline layout y pipeline para cada tipo de material
     for (auto& pipeline : m_pipelines)
     {
+        // 1. Verificar descriptor set layouts
+        if (pipeline.m_descriptor_set_layout.empty() ||
+            pipeline.m_descriptor_set_layout[0] == VK_NULL_HANDLE) {
+            throw MiniEngineException("Descriptor set layout not initialized");
+        }
+
+        // 2. Verificar shader stages
+        if (pipeline.m_shader_stages.empty()) {
+            throw MiniEngineException("No shader stages configured");
+        }
+        for (auto& stage : pipeline.m_shader_stages) {
+            if (stage.module == VK_NULL_HANDLE) {
+                throw MiniEngineException("Invalid shader module");
+            }
+        }
+
+        // 3. Verificar render pass
+        if (m_render_pass == VK_NULL_HANDLE) {
+            throw MiniEngineException("Render pass not initialized");
+        }
+
         // Pipeline layout
         VkPipelineLayoutCreateInfo pipeline_layout_info{};
         pipeline_layout_info.sType = VK_STRUCTURE_TYPE_PIPELINE_LAYOUT_CREATE_INFO;

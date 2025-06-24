@@ -47,7 +47,7 @@ namespace MiniEngine
             // prepare the different render supported depending on the material
             VkPipeline                                                         m_pipeline;
             VkPipelineLayout                                                   m_pipeline_layouts;
-            std::array<VkDescriptorSetLayout, 2                    > m_descriptor_set_layout; //2 sets, per frame and per object
+            std::array<VkDescriptorSetLayout, 1                    > m_descriptor_set_layout; //Just 1 for the blur
             std::array<DescriptorsSets, 3                    > m_descriptor_sets;
             std::array<VkPipelineShaderStageCreateInfo, 2                    > m_shader_stages;
         };
